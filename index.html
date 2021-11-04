@@ -31,10 +31,14 @@ div {text-align: center;}
 <img src="https://cdn.discordapp.com/attachments/905924611475116096/905944374343499806/HSCode.JPG">
 <p>Each one of these graphs show the line of best fit running through it. The line of best fit is esentially a trend line that goes through all of the data points on the scatterplot. 
   "Best" refers to the best approximation of the given set of data points. To calculate the line of best fit seen in each scatterplot I found the mean of the x and y values. In this case this was the 
-  height(x) and then all of the y values (Rain, Site Number, Altitude, and Temperature). Once I had the means of both values I made a for loop to calculate the slope. i used the mathematical equation for 
+  height(x) and then all of the y values (Rain, Site Number, Altitude, and Temperature). Once I had the means of both values I made a for loop to calculate the slope. I used the mathematical equation for 
   slope and used the correct variables to calculate it. The final step was to calculate the y intercept. This was done by getting the mean for the y value minus the slope times the mean of the x value. This
   is what it looked like in my code... yInt = (avCy-(slope*avCx)). Once you have the y intercept the final line of best fit can be drawn. Here is the calculations for each scatterplot...</p>
 <img src="https://cdn.discordapp.com/attachments/905924611475116096/905954335970713640/Results.JPG">
+ <p> Standard error is esentially the estimation in the variation of the estimated mean. R squared is a statistical measure for how close data points are on the line of best fit.
+   Looking at each scatterplot we can tell that the Site Number compared to the Plant Height fits our data points better on the scatterplot. The r sqared value is higher than all of the 
+   other scatterplots. To calculate the r squared we used the numpy library. Below is our code to find the r sqared value of just the Site Number/Height scatterplot.
+   <img src="https://cdn.discordapp.com/attachments/905924611475116096/905958710592012319/rSquared.JPG">
 </body>
 </html>
 
