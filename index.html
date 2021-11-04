@@ -34,7 +34,9 @@ div {text-align: center;}
   height(x) and then all of the y values (Rain, Site Number, Altitude, and Temperature). Once I had the means of both values I made a for loop to calculate the slope. I used the mathematical equation for 
   slope and used the correct variables to calculate it. The final step was to calculate the y intercept. This was done by getting the mean for the y value minus the slope times the mean of the x value. This
   is what it looked like in my code... yInt = (avCy-(slope*avCx)). Once you have the y intercept the final line of best fit can be drawn. Here is the calculations for each scatterplot...</p>
+  <h2> Total Calculations</h2>
 <img src="https://cdn.discordapp.com/attachments/905924611475116096/905954335970713640/Results.JPG">
+  <h2>R squared and SE Explanations</h2>
  <p> Standard error is esentially the estimation in the variation of the estimated mean. R squared is a statistical measure for how close data points are on the line of best fit.
    Looking at each scatterplot we can tell that the Site Number compared to the Plant Height fits our data points better on the scatterplot. The r sqared value is higher than all of the 
    other scatterplots. To calculate the r squared we used the numpy library. Below is our code to find the r sqared value of just the Site Number/Height scatterplot.
